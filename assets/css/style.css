@@ -1,0 +1,58 @@
+@import 'https://fonts.googleapis.com/css?family=Josefin+Slab';
+
+body {
+    font-family: "Josefin Slab";
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slider-container {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    border: 1px outset #999;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 1rem;
+    background-color: rgba(220, 220, 220, 0.1);
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+button {
+    width: 100px;
+    background-color: white;
+    border: 1px solid rgba(220, 220, 220, 1);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+button:hover {
+    box-shadow: 5px 5px 10px 0.1px rgba(0, 0, 0, 0.4);
+}
+
+.sliderBox {
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.sliderImage {
+    position: absolute;
+    width: 1200px;
+    height: 700px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
